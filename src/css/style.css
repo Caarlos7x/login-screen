@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Jost', monospace;
+}
+
+:root {
+    --background-color-light: #EEF2F6;
+    --text-color-light: #333333;
+    --background-color-dark: #000;
+    --background-color-card-dark: #1F2024;
+    --text-color-dark: #ffffff;
+    --border-top-dark: #ececec48;
+}
+
+body {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+/** --- dark mode --- */
+
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+/* Estilos adicionais */
+.main-panel-left, .main-panel-right {
+    padding: 0;
+}
+.main-panel-left .hero-main-panel {
+    height: 100vh;
+}
+.main-panel-right .background-color {
+    height: 100vh;
+}
+
+
+/* - - - login screen - - - */
+
+.theme-switch {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+.login-container {
+    background-color: rgb(218, 218, 218);
+}
+
+.hero-main-top-img img {
+    max-width: 500px;
+}
+
+.hero-main-content-login h1 {
+    font-size: 60px;
+    font-weight: 200;
+}
+
+.hero-main-content-login h2 {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.login-input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.input-group ::placeholder {
+    color: rgba(0, 0, 0, 0.443);
+    font-weight: 100;
+}
+
+.btn-login {
+    margin-top: 20px;
+    width: 300px;
+    background-color: #706BDE;
+    border: none;
+
+    &&:hover {
+        background-color: #918ceb;
+    }
+}
+
+.forgot-pass{
+    margin-top: 10px;
+}
+
+.forgot-pass h4 {
+    font-size: 16px;
+    font-weight: 100;
+    
+}
+
+.forgot-pass a {
+    text-decoration: none;
+    font-weight: 200;
+}
+
+
+
+.background-color {
+    background-color: #706BDE;
+    height: 100%;
+    width: auto;
+}
+
+.hero-main-top-img-left img {
+    max-width: 500px;
+}
+
+
+@media (max-width: 768px) {
+
+    .login-container {
+        width: 100%;
+        height: 100vh;
+    }
+    .main-panel-right {
+        display: none;
+    }
+
+    .login-input-container {
+        max-width: 350px;
+    }
+}
