@@ -2,7 +2,7 @@
 
 <div>
 <img src="https://i.imgur.com/8vhNCec.png">
-<img src="blob:https://imgur.com/0e7bceeb-7dc3-478f-8991-69bebdebd00c">
+<img src="https://i.imgur.com/O91W96u.png">
 </div>
 
 Este projeto é um template de tela de login responsivo, construído com Bootstrap, HTML, CSS e JavaScript.
